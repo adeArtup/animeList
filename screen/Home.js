@@ -60,7 +60,11 @@ export default class Home extends React.Component {
             </View>
           </View>
         </View>
-        <View style={[styles.wrapper, styles.footer]}></View>
+        <View style={[styles.wrapper, styles.footer]}>
+          <View>
+          <Text >Powered By AdeArtup</Text>
+          </View>
+        </View>
       </View>
     );
   }
@@ -69,6 +73,7 @@ export default class Home extends React.Component {
 const styles = StyleSheet.create({
   backgroundImage: {
     flex: 1,
+    width: "100%",
     resizeMode: "cover", // or 'stretch'
   },
   container: {
@@ -100,7 +105,6 @@ const styles = StyleSheet.create({
     flex: 1,
     width: "100%",
     padding: 8,
-
     flexDirection: "column",
     justifyContent: "center",
     position: "absolute",
@@ -109,15 +113,19 @@ const styles = StyleSheet.create({
     flex: 1,
     width: "95%",
     padding: 8,
-    // flexDirection: "column",
+    flexDirection: "column",
     backgroundColor: "#ff7657",
     justifyContent: "center",
+    marginLeft:18,
+    marginBottom:18,
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
   },
   footer: {
     flex: 0.5,
     backgroundColor: "#ff7657",
+    flexDirection:"row",
+    justifyContent: "center",
   },
   vRow: {
     marginTop: 10,
@@ -133,7 +141,6 @@ const styles = StyleSheet.create({
   },
   vCen: {
     width: "100%",
-    textAlign: "center",
   },
   conBtn: {
     width: "50%",

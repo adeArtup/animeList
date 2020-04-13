@@ -1,28 +1,17 @@
 {
   "expo": {
-    "name": "AwesomeProjectexpo",
-    "slug": "AwesomeProjectexpo",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    }
+   "name": "AnimeList",
+   "icon": "./assets/icon.png",
+   "version": "1.0.0",
+   "slug": "AnimeList",
+   "sdkVersion": "37.0.0",
+   "ios": {
+     "bundleIdentifier": "com.xcore.animelist",
+     "buildNumber": "1.0.0"
+   },
+   "android": {
+     "package": "com.xcore.animelist",
+     "versionCode": 1
+   }
   }
 }

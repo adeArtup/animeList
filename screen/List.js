@@ -53,7 +53,9 @@ class List extends Component {
             </ScrollView>
           </View>
         </View>
-        <View style={[styles.wrapper, styles.footer]}></View>
+        <View style={[styles.wrapper, styles.footer]}>
+            <Text>Powered By AdeArtup</Text>
+        </View>
       </View>
     );
   }
@@ -68,7 +70,7 @@ const styles = StyleSheet.create({
   },
   tinyLogo: {
     width: "100%",
-    position: 'Absolute',
+    position: 'absolute',
     height: 350,
   },
   wrapper: {
@@ -87,17 +89,17 @@ const styles = StyleSheet.create({
   },
   txtLogo: {
     fontSize: 20,
-    position: 'Relative',
-    fontStyle: "Bold",
+    position: 'relative',
+    fontWeight: "bold",
     textAlign: "center",
-    color: "#F9F9F9",
+    color: "#f9f9f9",
     backgroundColor: "#ff7657",
     top:10,
     padding:6,
   },
   btnView: {
     width:'30%',
-   position:'Absolute',
+   position:'absolute',
    top:300,
    left:30,
   },
@@ -116,7 +118,9 @@ const styles = StyleSheet.create({
   },
   footer: {
     flex: 0.5,
-    backgroundColor: "#f9f9f9",
+    backgroundColor: "#ff7657",
+    flexDirection:"row",
+    justifyContent: "center",
   },
 });
 
