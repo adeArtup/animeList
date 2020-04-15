@@ -13,6 +13,16 @@ import { Input } from "react-native-elements";
 export default class Home extends React.Component {
   state = { nickname: "", err: "Harus diisi" };
 
+  checkInput(a){
+      a = this.state.nickname;
+      if(a == ''){
+         alert('Tulis dulu nama panggilan anda!')
+      }else{
+        this.props.navigation.navigate("List Action Anime", {
+                        nickname: this.state.nickname,
+                      })
+      }
+  }
   render() {
     return (
       <View style={styles.container}>
@@ -50,9 +60,10 @@ export default class Home extends React.Component {
                     color="#222"
                     title="Ikimashou"
                     onPress={() =>
-                      this.props.navigation.navigate("List Action Anime", {
-                        nickname: this.state.nickname,
-                      })
+                      // this.props.navigation.navigate("List Action Anime", {
+                      //   nickname: this.state.nickname,
+                      // })
+                      this.checkInput(this.state.nickname)
                     }
                   ></Button>
                 </View>
