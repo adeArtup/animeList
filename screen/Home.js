@@ -15,12 +15,13 @@ export default class Home extends React.Component {
 
   checkInput(a){
       a = this.state.nickname;
-      if(a == ''){
-         alert('Tulis dulu nama panggilan anda!')
+      if(a.trim() != '' ){
+        
+         this.props.navigation.navigate("List Action Anime", {
+          nickname: this.state.nickname,
+        })
       }else{
-        this.props.navigation.navigate("List Action Anime", {
-                        nickname: this.state.nickname,
-                      })
+        alert('Tulis dulu nama panggilan anda!')
       }
   }
   render() {
